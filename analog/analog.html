@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    RED.nodes.registerType('maxim-max1270',{
+        category: 'input',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            channel: { value: "",required:true, validate:RED.validators.number() },
+            sampling: { value:10,required:true,validate:RED.validators.number() },
+            reporting: { value:1000,required:true,validate:RED.validators.number() }
+        },
+        inputs:0,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name||"maxim-max31855";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="maxim-max31855">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-channel"><i class="icon-code-fork"></i> Channel</label>
+        <input type="text" id="node-input-muxing" placeholder="1 for True, 0 for False">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sampling"><i class="icon-clock"></i> Sampling</label>
+        <input type="text" id="node-input-sampling" placeholder="Sampling rate in milliseconds.">
+    </div>
+    <div class="form-row">
+        <label for="node-input-reporting"><i class="icon-clipboard"></i> Reporting</label>
+        <input type="text" id="node-input-reporting" placeholder="Reporting rate in milliseconds.">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="maxim-max31855">
+    <p>A simple node that reads the value from a maxim MAX1270 into Node-RED.</p>
+</script>

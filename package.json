@@ -1,0 +1,27 @@
+{
+  "name": "@heatworks/node-red-contrib-maxim-max1270",
+  "version": "0.0.1",
+  "description": "Node-RED node for communicating with a Maxium MAX1270 chip over SPI.",
+  "main": "analog/analog.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heatworks/node-red-contrib-maxim-max1270.git"
+  },
+  "author": "Weston Catron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heatworks/node-red-contrib-maxim-max1270/issues"
+  },
+  "homepage": "https://github.com/Heatworks/node-red-contrib-maxim-max1270#readme",
+  "dependencies": {
+    "python-shell": "^0.4.0"
+  },
+  "node-red"     : {
+    "nodes": {
+      "thermocouple": "thermocouple/thermocouple.js"
+    }
+  }
+}
