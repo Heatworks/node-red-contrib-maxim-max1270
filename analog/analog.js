@@ -24,5 +24,5 @@ module.exports = function(RED) {
             }
         });
     }
-    RED.nodes.registerType("maxim-max31855", MaximMax1270Node);
+    RED.nodes.registerType("maxim-max1270", MaximMax1270Node);
 }
