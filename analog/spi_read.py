@@ -14,17 +14,6 @@ if(len(sys.argv) > 3):
     SPI_DEVICE = int(sys.argv[2])
     CHANNEL = int(sys.argv[3])
 
-
-if spi is not None:
-    self._logger.debug('Using hardware SPI')
-    self._spi = spi
-elif clk is not None and cs is not None and do is not None:
-    self._logger.debug('Using software SPI')
-    # Default to platform GPIO if not provided.        
-    spi = SPI.BitBang(gpio, clk, None, do, cs)
-
-spi.open(SPI_PORT, SPI_DEVICE)
-
 SAMPLING_RATE = 1.000
 REPORTING_RATE = 1.000
 if(len(sys.argv) > 5):

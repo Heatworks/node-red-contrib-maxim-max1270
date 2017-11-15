@@ -1,6 +1,6 @@
 {
   "name": "@heatworks/node-red-contrib-maxim-max1270",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node-RED node for communicating with a Maxium MAX1270 chip over SPI.",
   "main": "analog/analog.js",
   "scripts": {
