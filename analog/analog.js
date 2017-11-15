@@ -8,7 +8,7 @@ module.exports = function(RED) {
         var scriptPath = './spi_read.py'
         
         var args = []
-        args = [0,1,parseInt(config.channel),parseInt(config.sampling),parseInt(config.reporting),parseInt(config.spi_clk),parseInt(config.spi_di),parseInt(config.spi_do),parseInt(config.spi_cs)]
+        args = [0,1,parseInt(config.channel),parseInt(config.sampling),parseInt(config.reporting),parseInt(config.spiclk),parseInt(config.spidi),parseInt(config.spido),parseInt(config.spics)]
 
         var pyshell = new PythonShell(scriptPath, { scriptPath: __dirname, args: args });
 

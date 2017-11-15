@@ -20,13 +20,13 @@ if(len(sys.argv) > 5):
     SAMPLING_RATE = float(sys.argv[4]) / 1000
     REPORTING_RATE = float(sys.argv[5]) / 1000
 
-defaultSPI = true
+defaultSPI = True
 if (len(sys.argv) > 9):
     SPI_CLK = int(sys.argv[6])
     SPI_DI = int(sys.argv[7])
     SPI_DO = int(sys.argv[8])
     SPI_CS = int(sys.argv[9])
-    defaultSPI = false
+    defaultSPI = False
 
 if defaultSPI:
     spi = SPI.SpiDev(SPI_PORT, SPI_DEVICE)
