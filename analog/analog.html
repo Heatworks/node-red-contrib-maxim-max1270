@@ -6,7 +6,11 @@
             name: { value: "" },
             channel: { value: "",required:true, validate:RED.validators.number() },
             sampling: { value:10,required:true,validate:RED.validators.number() },
-            reporting: { value:1000,required:true,validate:RED.validators.number() }
+            reporting: { value:1000,required:true,validate:RED.validators.number() },
+            spiclk: { value:0,required:false,validate:RED.validators.number() },
+            spido: { value:0,required:false,validate:RED.validators.number() },
+            spidi: { value:0,required:false,validate:RED.validators.number() },
+            spics: { value:0,required:false,validate:RED.validators.number() }
         },
         inputs:0,
         outputs:1,
